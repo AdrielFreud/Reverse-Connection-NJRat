@@ -11,8 +11,8 @@ import thread
 import time
 import random
 
-ip = "127.0.0.1" # from server|malware
-port = 5552 # port for connect on the server | reverse
+ip = ""s # from server|malware
+port = 1177 # port for connect on the server | reverse
 
 thread_count = 2000
 my_delay = 20
@@ -75,7 +75,7 @@ def spam_server(threadName, delay):
 
 try:
     for x in range(thread_count):
-        thread.start_new_thread( spam_server, ("Thread-{}".format(x), my_delay, ) )
+        thread.start_new_thread(spam_server, ("Thread-{}".format(x), my_delay,))
     time.sleep(65)
 except:
 	pass
